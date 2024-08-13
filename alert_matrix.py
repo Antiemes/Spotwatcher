@@ -29,6 +29,7 @@ async def main():
         except Exception as e:
             print("Error in getting spots.")
             time.sleep(30)
+            continue
         try:
             json = response.json()
         except RequestsJSONDecodeError:

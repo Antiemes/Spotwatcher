@@ -32,7 +32,8 @@ async def main():
             continue
         try:
             json = response.json()
-        except RequestsJSONDecodeError:
+        #except RequestsJSONDecodeError:
+        except Exception as e:
             continue
 
         timestampnow = time.time()
